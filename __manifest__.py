@@ -20,6 +20,8 @@
         'views/saint_moritz.xml',
         'views/qualitat.xml',
         'views/elite_brands.xml',
+        'views/otros.xml',
+        'views/cobranzas.xml',
         'views/views.xml',
     ],
     'demo': [

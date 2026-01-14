@@ -6,3 +6,5 @@ access_gedesa_proces_user,Acceso a Procesos Gedesa - Usuario,model_gedesa_proces
 access_saint_moritz_proces_user,Acceso a Procesos Saint Moritz - Usuario,model_saint_moritz_proces,base.group_user,1,1,1,1
 access_qualitat_proces_user,Acceso a Procesos Qualitat - Usuario,model_qualitat_proces,base.group_user,1,1,1,1
 access_elite_brands_proces_user,Acceso a Procesos Elite Brands - Usuario,model_elite_brands_proces,base.group_user,1,1,1,1
+access_otros_proces_user,Acceso a Procesos Otros - Usuario,model_otros_proces,base.group_user,1,1,1,1
+access_cobranzas_proces_user,Acceso a Procesos de Cobranzas - Usuario,model_cobranzas_proces,base.group_user,1,1,1,1

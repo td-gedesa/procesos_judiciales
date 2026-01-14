@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Otros List View -->
+        <record id="view_otros_proces_list" model="ir.ui.view">
+            <field name="name">otros.proces.list</field>
+            <field name="model">otros.proces</field>
+            <field name="arch" type="xml">
+                <list string="Procesos Otros">
+                    <field name="numero"/>
+                    <field name="ciudad_id"/>
+                    <field name="tipo_proceso_id"/>
+                    <field name="partes"/>
+                    <field name="fecha_inicio_proceso"/>
+                    <field name="monto"/>
+                    <field name="breve_resumen"/>
+                    <field name="estado"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Otros Form View -->
+        <record id="view_otros_proces_form" model="ir.ui.view">
+            <field name="name">otros.proces.form</field>
+            <field name="model">otros.proces</field>
+            <field name="arch" type="xml">
+                <form string="Proceso Judicial Otros">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                        </div>
+                        <h2>
+                            <field name="numero" class="oe_inline" readonly="1"/>
+                        </h2>
+                        <group>
+                            <group>
+                                <field name="ciudad_id" required="1"/>
+                                <field name="tipo_proceso_id" required="1"/>
+                                <field name="fecha_inicio_proceso"/>
+                                <field name="monto"/>
+                                <field name="company_currency_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <group string="Partes Involucradas">
+                            <field name="partes" widget="html"/>
+                        </group>
+                        <notebook>
+                            <page string="Breve Resumen">
+                                <field name="breve_resumen" widget="html"/>
+                            </page>
+                            <page string="Estado">
+                                <field name="estado" widget="html"/>
+                            </page>
+                            <page string="Próxima Actuación/Estrategia">
+                                <field name="proxima_actuacion_estrategia" widget="html"/>
+                            </page>
+                            <page string="Anotaciones">
+                                <field name="anotaciones" widget="html"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Otros Search View -->
+        <record id="view_otros_proces_search" model="ir.ui.view">
+            <field name="name">otros.proces.search</field>
+            <field name="model">otros.proces</field>
+            <field name="arch" type="xml">
+                <search string="Procesos Otros">
+                    <field name="numero" string="Nº"/>
+                    <field name="ciudad_id" string="Ciudad"/>
+                    <field name="tipo_proceso_id" string="Tipo"/>
+                    <field name="partes" string="Partes"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Otros Action -->
+        <record id="action_otros_proces" model="ir.actions.act_window">
+            <field name="name">Procesos Otros</field>
+            <field name="res_model">otros.proces</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crea tu primer proceso en Otros
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

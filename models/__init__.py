@@ -5,3 +5,5 @@ from . import gedesa
 from . import saint_moritz
 from . import qualitat
 from . import elite_brands
+from . import otros
+from . import cobranzas

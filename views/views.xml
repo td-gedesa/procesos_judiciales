@@ -112,14 +112,14 @@
             id="menu_procesos_judiciales_otros"
             name="Otros"
             parent="menu_procesos_judiciales_root"
-            action="action_procesos_judiciales"
+            action="procesos_judiciales.action_otros_proces"
             sequence="5"/>
 
         <menuitem
             id="menu_procesos_judiciales_cobranzas"
             name="Cobranzas"
             parent="menu_procesos_judiciales_root"
-            action="action_procesos_judiciales"
+            action="procesos_judiciales.action_cobranzas_proces"
             sequence="6"/>
 
         <menuitem

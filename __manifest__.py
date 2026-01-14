@@ -22,6 +22,7 @@
         'views/elite_brands.xml',
         'views/otros.xml',
         'views/cobranzas.xml',
+        'views/aduana.xml',
         'views/views.xml',
     ],
     'demo': [

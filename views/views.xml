@@ -126,7 +126,7 @@
             id="menu_procesos_judiciales_aduana"
             name="Aduana"
             parent="menu_procesos_judiciales_root"
-            action="action_procesos_judiciales"
+            action="procesos_judiciales.action_aduana_proces"
             sequence="7"/>
 
     </data>

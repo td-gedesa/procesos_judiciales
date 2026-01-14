@@ -8,3 +8,4 @@ access_qualitat_proces_user,Acceso a Procesos Qualitat - Usuario,model_qualitat_
 access_elite_brands_proces_user,Acceso a Procesos Elite Brands - Usuario,model_elite_brands_proces,base.group_user,1,1,1,1
 access_otros_proces_user,Acceso a Procesos Otros - Usuario,model_otros_proces,base.group_user,1,1,1,1
 access_cobranzas_proces_user,Acceso a Procesos de Cobranzas - Usuario,model_cobranzas_proces,base.group_user,1,1,1,1
+access_aduana_proces_user,Acceso a Procesos de Aduana - Usuario,model_aduana_proces,base.group_user,1,1,1,1

@@ -98,14 +98,14 @@
             id="menu_procesos_judiciales_qualitat"
             name="Qualitat"
             parent="menu_procesos_judiciales_root"
-            action="action_procesos_judiciales"
+            action="procesos_judiciales.action_qualitat_proces"
             sequence="3"/>
 
         <menuitem
             id="menu_procesos_judiciales_elite_brands"
             name="Elite Brands"
             parent="menu_procesos_judiciales_root"
-            action="action_procesos_judiciales"
+            action="procesos_judiciales.action_elite_brands_proces"
             sequence="4"/>
 
         <menuitem

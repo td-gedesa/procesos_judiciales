@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Qualitat List View -->
+        <record id="view_qualitat_proces_list" model="ir.ui.view">
+            <field name="name">qualitat.proces.list</field>
+            <field name="model">qualitat.proces</field>
+            <field name="arch" type="xml">
+                <list string="Procesos Qualitat">
+                    <field name="numero"/>
+                    <field name="ciudad_id"/>
+                    <field name="tipo_proceso_id"/>
+                    <field name="juzgado_nurej"/>
+                    <field name="demandante_o_denunciante"/>
+                    <field name="demandado_o_denunciado"/>
+                    <field name="fecha_inicio_proceso"/>
+                    <field name="fecha_cierre_proceso"/>
+                    <field name="monto_demandado"/>
+                    <field name="monto_cancelado"/>
+                    <field name="abogado_a_cargo"/>
+                    <field name="estado_proceso"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Qualitat Form View -->
+        <record id="view_qualitat_proces_form" model="ir.ui.view">
+            <field name="name">qualitat.proces.form</field>
+            <field name="model">qualitat.proces</field>
+            <field name="arch" type="xml">
+                <form string="Proceso Judicial Qualitat">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                        </div>
+                        <h2>
+                            <field name="numero" class="oe_inline" readonly="1"/>
+                        </h2>
+                        <group>
+                            <group>
+                                <field name="ciudad_id" required="1"/>
+                                <field name="tipo_proceso_id" required="1"/>
+                                <field name="juzgado_nurej" required="1"/>
+                                <field name="abogado_a_cargo"/>
+                            </group>
+                            <group>
+                                <field name="fecha_inicio_proceso"/>
+                                <field name="fecha_cierre_proceso"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="monto_demandado"/>
+                                <field name="monto_cancelado"/>
+                                <field name="company_currency_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <group string="Partes del Proceso">
+                            <group>
+                                <field name="demandante_o_denunciante"/>
+                            </group>
+                            <group>
+                                <field name="demandado_o_denunciado"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Causa Demandada">
+                                <field name="causa_demandada" widget="html"/>
+                            </page>
+                            <page string="Estado del Proceso">
+                                <field name="estado_proceso" widget="html"/>
+                            </page>
+                            <page string="Próxima Actuación/Estrategia">
+                                <field name="proxima_actuacion_estrategia" widget="html"/>
+                            </page>
+                            <page string="Anotaciones">
+                                <field name="anotaciones" widget="html"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Qualitat Search View -->
+        <record id="view_qualitat_proces_search" model="ir.ui.view">
+            <field name="name">qualitat.proces.search</field>
+            <field name="model">qualitat.proces</field>
+            <field name="arch" type="xml">
+                <search string="Procesos Qualitat">
+                    <field name="numero" string="Nº"/>
+                    <field name="ciudad_id" string="Ciudad"/>
+                    <field name="demandante_o_denunciante" string="Demandante"/>
+                    <field name="demandado_o_denunciado" string="Demandado"/>
+                    <field name="abogado_a_cargo" string="Abogado"/>
+                    <field name="tipo_proceso_id"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Qualitat Action -->
+        <record id="action_qualitat_proces" model="ir.actions.act_window">
+            <field name="name">Procesos Qualitat</field>
+            <field name="res_model">qualitat.proces</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crea tu primer proceso de Qualitat
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

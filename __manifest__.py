@@ -18,6 +18,8 @@
         'views/tipo_proceso.xml',
         'views/gedesa.xml',
         'views/saint_moritz.xml',
+        'views/qualitat.xml',
+        'views/elite_brands.xml',
         'views/views.xml',
     ],
     'demo': [

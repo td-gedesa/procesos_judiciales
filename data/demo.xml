@@ -30,11 +30,58 @@
             <field name="description">Ciudad de Cochabamba</field>
         </record>
 
-        <!-- Demo Data for Gedesa Procesos -->
+        <!-- Demo Data for Tipos de Proceso -->
+        <record id="tipo_proceso_demo_civil" model="tipo.proceso">
+            <field name="name">CIVIL</field>
+            <field name="codigo">CVL</field>
+            <field name="description">Procesos civiles</field>
+        </record>
+
+        <record id="tipo_proceso_demo_laboral_beneficios" model="tipo.proceso">
+            <field name="name">LABORAL/BENEFICIOS SOCIALES</field>
+            <field name="codigo">LAB-BS</field>
+            <field name="description">Procesos laborales por beneficios sociales</field>
+        </record>
+
+        <record id="tipo_proceso_demo_laboral_infraccion" model="tipo.proceso">
+            <field name="name">LABORAL/INFRACCIÓN LEYES SOCIALES</field>
+            <field name="codigo">LAB-ILS</field>
+            <field name="description">Procesos por infracción de leyes sociales</field>
+        </record>
+
+        <record id="tipo_proceso_demo_amparo" model="tipo.proceso">
+            <field name="name">AMPARO CONSTITUCIONAL</field>
+            <field name="codigo">AMP</field>
+            <field name="description">Procesos de amparo constitucional</field>
+        </record>
+
+        <record id="tipo_proceso_demo_penal_estafa" model="tipo.proceso">
+            <field name="name">PENAL - Estafa agravada</field>
+            <field name="codigo">PEN-EST</field>
+            <field name="description">Procesos penales por estafa agravada</field>
+        </record>
+
+        <record id="tipo_proceso_demo_penal_deberes" model="tipo.proceso">
+            <field name="name">PENAL - INCUMPLIMIENTO DE DEBERES</field>
+            <field name="codigo">PEN-IDB</field>
+            <field name="description">Procesos penales por incumplimiento de deberes</field>
+        </record>
+
+        <record id="tipo_proceso_demo_penal_salud" model="tipo.proceso">
+            <field name="name">PENAL - DELITOS CONTRA LA SALUD</field>
+            <field name="codigo">PEN-DCS</field>
+            <field name="description">Procesos penales por delitos contra la salud</field>
+        </record>
+
+        <record id="tipo_proceso_demo_conciliacion" model="tipo.proceso">
+            <field name="name">CONCILIACIÓN CIVIL</field>
+            <field name="codigo">CON-CVL</field>
+            <field name="description">Procesos de conciliación civil</field>
+        </record>
         <record id="gedesa_proces_demo_1" model="gedesa.proces">
             <field name="numero">1</field>
             <field name="ciudad_id" ref="ciudad_demo_sucre"/>
-            <field name="tipo_proceso">civil</field>
+            <field name="tipo_proceso_id" ref="tipo_proceso_demo_civil"/>
             <field name="juzgado_nurej">Juzgado 5</field>
             <field name="demandante_o_denunciante">Juan Perez</field>
             <field name="demandado_o_denunciado">ABC Ltda</field>

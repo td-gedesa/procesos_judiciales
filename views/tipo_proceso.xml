@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- TipoProceso List View -->
+        <record id="view_tipo_proceso_list" model="ir.ui.view">
+            <field name="name">tipo.proceso.list</field>
+            <field name="model">tipo.proceso</field>
+            <field name="arch" type="xml">
+                <list string="Tipos de Proceso">
+                    <field name="name"/>
+                    <field name="codigo"/>
+                    <field name="active"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- TipoProceso Form View -->
+        <record id="view_tipo_proceso_form" model="ir.ui.view">
+            <field name="name">tipo.proceso.form</field>
+            <field name="model">tipo.proceso</field>
+            <field name="arch" type="xml">
+                <form string="Tipo de Proceso">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="1"/>
+                                <field name="codigo"/>
+                            </group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                        <field name="description" widget="html"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- TipoProceso Search View -->
+        <record id="view_tipo_proceso_search" model="ir.ui.view">
+            <field name="name">tipo.proceso.search</field>
+            <field name="model">tipo.proceso</field>
+            <field name="arch" type="xml">
+                <search string="Tipos de Proceso">
+                    <field name="name" string="Nombre del Tipo de Proceso"/>
+                    <field name="codigo" string="Código"/>
+                    <separator/>
+                    <filter name="active" string="Activo" domain="[('active', '=', True)]"/>
+                    <filter name="inactive" string="Inactivo" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- TipoProceso Action -->
+        <record id="action_tipo_proceso" model="ir.actions.act_window">
+            <field name="name">Tipos de Proceso</field>
+            <field name="res_model">tipo.proceso</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crea tu primer tipo de proceso
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

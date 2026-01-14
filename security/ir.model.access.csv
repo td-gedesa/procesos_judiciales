@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_procesos_judiciales_user,Acceso a Procesos Judiciales - Usuario,model_procesos_judiciales,base.group_user,1,1,1,1
 access_ciudad_user,Acceso a Ciudades - Usuario,model_ciudad_ciudad,base.group_user,1,1,1,1
+access_tipo_proceso_user,Acceso a Tipos de Proceso - Usuario,model_tipo_proceso,base.group_user,1,1,1,1
 access_gedesa_proces_user,Acceso a Procesos Gedesa - Usuario,model_gedesa_proces,base.group_user,1,1,1,1

@@ -13,7 +13,9 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'data/base.xml',
         'views/ciudad.xml',
+        'views/tipo_proceso.xml',
         'views/gedesa.xml',
         'views/views.xml',
     ],

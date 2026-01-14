@@ -15,15 +15,8 @@ class GedresaProces(models.Model):
         string='CIUDAD',
         required=True
     )
-    tipo_proceso = fields.Selection(
-        selection=[
-            ('civil', 'Civil'),
-            ('laboral', 'Laboral'),
-            ('mercantil', 'Mercantil'),
-            ('penal', 'Penal'),
-            ('administrativo', 'Administrativo'),
-            ('otro', 'Otro'),
-        ],
+    tipo_proceso_id = fields.Many2one(
+        'tipo.proceso',
         string='TIPO DE PROCESO',
         required=True
     )

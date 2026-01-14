@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Demo Data for Procesos Judiciales -->
+        <record id="procesos_judiciales_demo_1" model="procesos.judiciales">
+            <field name="name">Proceso Judicial Ejemplo 1</field>
+            <field name="description">Este es un proceso judicial de ejemplo para demostración</field>
+            <field name="state">active</field>
+            <field name="date_start">2026-01-01</field>
+            <field name="date_end">2026-12-31</field>
+        </record>
+
+    </data>
+</odoo>

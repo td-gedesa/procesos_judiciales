@@ -84,7 +84,7 @@
             id="menu_procesos_judiciales_gedesa"
             name="Gedesa"
             parent="menu_procesos_judiciales_root"
-            action="action_procesos_judiciales"
+            action="procesos_judiciales.action_gedesa_proces"
             sequence="1"/>
 
         <menuitem

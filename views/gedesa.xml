@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Gedesa List View -->
+        <record id="view_gedesa_proces_list" model="ir.ui.view">
+            <field name="name">gedesa.proces.list</field>
+            <field name="model">gedesa.proces</field>
+            <field name="arch" type="xml">
+                <list string="Procesos Gedesa">
+                    <field name="numero"/>
+                    <field name="ciudad"/>
+                    <field name="tipo_proceso"/>
+                    <field name="juzgado_nurej"/>
+                    <field name="demandante_o_denunciante"/>
+                    <field name="demandado_o_denunciado"/>
+                    <field name="monto"/>
+                    <field name="estado_proceso"/>
+                    <field name="proxima_actuacion_estrategia"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Gedesa Form View -->
+        <record id="view_gedesa_proces_form" model="ir.ui.view">
+            <field name="name">gedesa.proces.form</field>
+            <field name="model">gedesa.proces</field>
+            <field name="arch" type="xml">
+                <form string="Proceso Judicial Gedesa">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                        </div>
+                        <h2>
+                            <field name="numero" class="oe_inline" readonly="1"/>
+                        </h2>
+                        <group>
+                            <group>
+                                <field name="ciudad" required="1"/>
+                                <field name="tipo_proceso" required="1"/>
+                                <field name="juzgado_nurej" required="1"/>
+                            </group>
+                            <group>
+                                <field name="monto"/>
+                                <field name="company_currency_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <group string="Partes del Proceso">
+                            <group>
+                                <field name="demandante_o_denunciante"/>
+                            </group>
+                            <group>
+                                <field name="demandado_o_denunciado"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Resumen">
+                                <field name="breve_resumen" widget="html"/>
+                            </page>
+                            <page string="Estado del Proceso">
+                                <field name="estado_proceso" widget="html"/>
+                            </page>
+                            <page string="Próxima Actuación/Estrategia">
+                                <field name="proxima_actuacion_estrategia" widget="html"/>
+                            </page>
+                            <page string="Anotaciones">
+                                <field name="anotaciones" widget="html"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Gedesa Search View -->
+        <record id="view_gedesa_proces_search" model="ir.ui.view">
+            <field name="name">gedesa.proces.search</field>
+            <field name="model">gedesa.proces</field>
+            <field name="arch" type="xml">
+                <search string="Procesos Gedesa">
+                    <field name="numero" string="Nº"/>
+                    <field name="ciudad" string="Ciudad"/>
+                    <field name="demandante_o_denunciante" string="Demandante o Denunciante"/>
+                    <field name="demandado_o_denunciado" string="Demandado o Denunciado"/>
+                    <field name="tipo_proceso"/>
+                    <separator/>
+                    <filter name="civil" string="Civil" domain="[('tipo_proceso', '=', 'civil')]"/>
+                    <filter name="laboral" string="Laboral" domain="[('tipo_proceso', '=', 'laboral')]"/>
+                    <filter name="mercantil" string="Mercantil" domain="[('tipo_proceso', '=', 'mercantil')]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Gedesa Action -->
+        <record id="action_gedesa_proces" model="ir.actions.act_window">
+            <field name="name">Procesos Gedesa</field>
+            <field name="res_model">gedesa.proces</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crea tu primer proceso de Gedesa
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

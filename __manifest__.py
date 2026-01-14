@@ -13,6 +13,7 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        'views/gedesa.xml',
         'views/views.xml',
     ],
     'demo': [

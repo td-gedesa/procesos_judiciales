@@ -11,5 +11,20 @@
             <field name="date_end">2026-12-31</field>
         </record>
 
+        <!-- Demo Data for Gedesa Procesos -->
+        <record id="gedesa_proces_demo_1" model="gedesa.proces">
+            <field name="numero">1</field>
+            <field name="ciudad">Sucre</field>
+            <field name="tipo_proceso">civil</field>
+            <field name="juzgado_nurej">Juzgado 5</field>
+            <field name="demandante_o_denunciante">Juan Perez</field>
+            <field name="demandado_o_denunciado">ABC Ltda</field>
+            <field name="monto">50000</field>
+            <field name="breve_resumen">Demanda por contrato incumplido entre las partes</field>
+            <field name="estado_proceso">13/11/24: Notificado Auto Supremo</field>
+            <field name="proxima_actuacion_estrategia">5/12/24: Esperando radicación</field>
+            <field name="anotaciones">16/01/25: No retornó expediente; 11/02/25: Pago Bs 76,508</field>
+        </record>
+
     </data>
 </odoo>

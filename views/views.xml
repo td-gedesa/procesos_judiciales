@@ -91,7 +91,7 @@
             id="menu_procesos_judiciales_saint_moritz"
             name="Saint Moritz"
             parent="menu_procesos_judiciales_root"
-            action="action_procesos_judiciales"
+            action="procesos_judiciales.action_saint_moritz_proces"
             sequence="2"/>
 
         <menuitem

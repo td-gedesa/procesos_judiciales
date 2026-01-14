@@ -17,6 +17,7 @@
         'views/ciudad.xml',
         'views/tipo_proceso.xml',
         'views/gedesa.xml',
+        'views/saint_moritz.xml',
         'views/views.xml',
     ],
     'demo': [

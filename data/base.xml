@@ -51,6 +51,30 @@
             <field name="description">Procesos de conciliación civil</field>
         </record>
 
+        <record id="tipo_proceso_civil_reivindicacion" model="tipo.proceso">
+            <field name="name">Civil - Acción de Reivindicación</field>
+            <field name="codigo">CVL-REIN</field>
+            <field name="description">Acción de reivindicación en procesos civiles</field>
+        </record>
+
+        <record id="tipo_proceso_civil_cobro_costas" model="tipo.proceso">
+            <field name="name">CIVIL-COBRO COSTAS</field>
+            <field name="codigo">CVL-COSTAS</field>
+            <field name="description">Procesos de cobro de costas</field>
+        </record>
+
+        <record id="tipo_proceso_civil_eviccion" model="tipo.proceso">
+            <field name="name">CIVIL - EVICCIÓN Y SANEAMIENTO</field>
+            <field name="codigo">CVL-EVIC</field>
+            <field name="description">Procesos de evicción y saneamiento</field>
+        </record>
+
+        <record id="tipo_proceso_otros" model="tipo.proceso">
+            <field name="name">OTROS</field>
+            <field name="codigo">OTR</field>
+            <field name="description">Otros tipos de procesos judiciales</field>
+        </record>
+
         <!-- Base Data for Ciudades -->
         <record id="ciudad_sucre" model="ciudad.ciudad">
             <field name="name">Sucre</field>

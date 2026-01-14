@@ -1,11 +1,21 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_procesos_judiciales_user,Acceso a Procesos Judiciales - Usuario,model_procesos_judiciales,base.group_user,1,1,1,1
-access_ciudad_user,Acceso a Ciudades - Usuario,model_ciudad_ciudad,base.group_user,1,1,1,1
-access_tipo_proceso_user,Acceso a Tipos de Proceso - Usuario,model_tipo_proceso,base.group_user,1,1,1,1
-access_gedesa_proces_user,Acceso a Procesos Gedesa - Usuario,model_gedesa_proces,base.group_user,1,1,1,1
-access_saint_moritz_proces_user,Acceso a Procesos Saint Moritz - Usuario,model_saint_moritz_proces,base.group_user,1,1,1,1
-access_qualitat_proces_user,Acceso a Procesos Qualitat - Usuario,model_qualitat_proces,base.group_user,1,1,1,1
-access_elite_brands_proces_user,Acceso a Procesos Elite Brands - Usuario,model_elite_brands_proces,base.group_user,1,1,1,1
-access_otros_proces_user,Acceso a Procesos Otros - Usuario,model_otros_proces,base.group_user,1,1,1,1
-access_cobranzas_proces_user,Acceso a Procesos de Cobranzas - Usuario,model_cobranzas_proces,base.group_user,1,1,1,1
-access_aduana_proces_user,Acceso a Procesos de Aduana - Usuario,model_aduana_proces,base.group_user,1,1,1,1
+access_procesos_judiciales_lector,Acceso a Procesos Judiciales - Lector,model_procesos_judiciales,group_procesos_judiciales_lector,1,0,0,0
+access_procesos_judiciales_admin,Acceso a Procesos Judiciales - Administracion,model_procesos_judiciales,group_procesos_judiciales_administracion,1,1,1,1
+access_ciudad_lector,Acceso a Ciudades - Lector,model_ciudad_ciudad,group_procesos_judiciales_lector,1,0,0,0
+access_ciudad_admin,Acceso a Ciudades - Administracion,model_ciudad_ciudad,group_procesos_judiciales_administracion,1,1,1,1
+access_tipo_proceso_lector,Acceso a Tipos de Proceso - Lector,model_tipo_proceso,group_procesos_judiciales_lector,1,0,0,0
+access_tipo_proceso_admin,Acceso a Tipos de Proceso - Administracion,model_tipo_proceso,group_procesos_judiciales_administracion,1,1,1,1
+access_gedesa_proces_lector,Acceso a Procesos Gedesa - Lector,model_gedesa_proces,group_procesos_judiciales_lector,1,0,0,0
+access_gedesa_proces_admin,Acceso a Procesos Gedesa - Administracion,model_gedesa_proces,group_procesos_judiciales_administracion,1,1,1,1
+access_saint_moritz_proces_lector,Acceso a Procesos Saint Moritz - Lector,model_saint_moritz_proces,group_procesos_judiciales_lector,1,0,0,0
+access_saint_moritz_proces_admin,Acceso a Procesos Saint Moritz - Administracion,model_saint_moritz_proces,group_procesos_judiciales_administracion,1,1,1,1
+access_qualitat_proces_lector,Acceso a Procesos Qualitat - Lector,model_qualitat_proces,group_procesos_judiciales_lector,1,0,0,0
+access_qualitat_proces_admin,Acceso a Procesos Qualitat - Administracion,model_qualitat_proces,group_procesos_judiciales_administracion,1,1,1,1
+access_elite_brands_proces_lector,Acceso a Procesos Elite Brands - Lector,model_elite_brands_proces,group_procesos_judiciales_lector,1,0,0,0
+access_elite_brands_proces_admin,Acceso a Procesos Elite Brands - Administracion,model_elite_brands_proces,group_procesos_judiciales_administracion,1,1,1,1
+access_otros_proces_lector,Acceso a Procesos Otros - Lector,model_otros_proces,group_procesos_judiciales_lector,1,0,0,0
+access_otros_proces_admin,Acceso a Procesos Otros - Administracion,model_otros_proces,group_procesos_judiciales_administracion,1,1,1,1
+access_cobranzas_proces_lector,Acceso a Procesos de Cobranzas - Lector,model_cobranzas_proces,group_procesos_judiciales_lector,1,0,0,0
+access_cobranzas_proces_admin,Acceso a Procesos de Cobranzas - Administracion,model_cobranzas_proces,group_procesos_judiciales_administracion,1,1,1,1
+access_aduana_proces_lector,Acceso a Procesos de Aduana - Lector,model_aduana_proces,group_procesos_judiciales_lector,1,0,0,0
+access_aduana_proces_admin,Acceso a Procesos de Aduana - Administracion,model_aduana_proces,group_procesos_judiciales_administracion,1,1,1,1

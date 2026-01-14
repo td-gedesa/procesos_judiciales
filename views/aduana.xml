@@ -68,8 +68,8 @@
                 <search string="Procesos de Aduana">
                     <field name="numero" string="Nº"/>
                     <field name="ciudad_id" string="Ciudad"/>
+                    <field name="tipo_proceso_id" string="Tipo de Proceso"/>
                     <field name="empresa" string="Empresa"/>
-                    <field name="tipo_proceso_id"/>
                 </search>
             </field>
         </record>

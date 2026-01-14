@@ -77,8 +77,7 @@
         <menuitem
             id="menu_procesos_judiciales_root"
             name="Procesos Judiciales"
-            sequence="10"
-            web_icon="procesos_judiciales,static/description/icon.png"/>
+            sequence="10"/>
 
         <!-- Submenus by Category -->
         <menuitem

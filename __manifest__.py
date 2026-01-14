@@ -1,7 +1,7 @@
 {
     'name': 'Procesos Judiciales',
     'version': '18.0.1.0.0',
-    'category': 'Procesos judiciales',
+    'category': 'Tools',
     'description': 'Módulo para la gestión de procesos judiciales',
     'author': 'Alan Odoo',
     'website': 'https://www.example.com',
@@ -12,7 +12,6 @@
         'mail',
     ],
     'data': [
-        'security/groups.xml',
         'security/ir.model.access.csv',
         'data/base.xml',
         'views/ciudad.xml',

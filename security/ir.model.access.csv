@@ -1,21 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_procesos_judiciales_admin,Acceso a Procesos Judiciales - Admin,model_procesos_judiciales,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_procesos_judiciales_user,Acceso a Procesos Judiciales - Vista Usuario,model_procesos_judiciales,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_ciudad_admin,Acceso a Ciudades - Admin,model_ciudad_ciudad,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_ciudad_user,Acceso a Ciudades - Vista Usuario,model_ciudad_ciudad,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_tipo_proceso_admin,Acceso a Tipos de Proceso - Admin,model_tipo_proceso,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_tipo_proceso_user,Acceso a Tipos de Proceso - Vista Usuario,model_tipo_proceso,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_gedesa_proces_admin,Acceso a Procesos Gedesa - Admin,model_gedesa_proces,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_gedesa_proces_user,Acceso a Procesos Gedesa - Vista Usuario,model_gedesa_proces,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_saint_moritz_proces_admin,Acceso a Procesos Saint Moritz - Admin,model_saint_moritz_proces,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_saint_moritz_proces_user,Acceso a Procesos Saint Moritz - Vista Usuario,model_saint_moritz_proces,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_qualitat_proces_admin,Acceso a Procesos Qualitat - Admin,model_qualitat_proces,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_qualitat_proces_user,Acceso a Procesos Qualitat - Vista Usuario,model_qualitat_proces,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_elite_brands_proces_admin,Acceso a Procesos Elite Brands - Admin,model_elite_brands_proces,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_elite_brands_proces_user,Acceso a Procesos Elite Brands - Vista Usuario,model_elite_brands_proces,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_otros_proces_admin,Acceso a Procesos Otros - Admin,model_otros_proces,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_otros_proces_user,Acceso a Procesos Otros - Vista Usuario,model_otros_proces,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_cobranzas_proces_admin,Acceso a Procesos de Cobranzas - Admin,model_cobranzas_proces,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_cobranzas_proces_user,Acceso a Procesos de Cobranzas - Vista Usuario,model_cobranzas_proces,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
-access_aduana_proces_admin,Acceso a Procesos de Aduana - Admin,model_aduana_proces,procesos_judiciales.group_procesos_administracion,1,1,1,1
-access_aduana_proces_user,Acceso a Procesos de Aduana - Vista Usuario,model_aduana_proces,procesos_judiciales.group_procesos_vista_usuario,1,0,0,0
+access_procesos_judiciales_user,Acceso a Procesos Judiciales - Usuario,model_procesos_judiciales,base.group_user,1,1,1,1
+access_ciudad_user,Acceso a Ciudades - Usuario,model_ciudad_ciudad,base.group_user,1,1,1,1
+access_tipo_proceso_user,Acceso a Tipos de Proceso - Usuario,model_tipo_proceso,base.group_user,1,1,1,1
+access_gedesa_proces_user,Acceso a Procesos Gedesa - Usuario,model_gedesa_proces,base.group_user,1,1,1,1
+access_saint_moritz_proces_user,Acceso a Procesos Saint Moritz - Usuario,model_saint_moritz_proces,base.group_user,1,1,1,1
+access_qualitat_proces_user,Acceso a Procesos Qualitat - Usuario,model_qualitat_proces,base.group_user,1,1,1,1
+access_elite_brands_proces_user,Acceso a Procesos Elite Brands - Usuario,model_elite_brands_proces,base.group_user,1,1,1,1
+access_otros_proces_user,Acceso a Procesos Otros - Usuario,model_otros_proces,base.group_user,1,1,1,1
+access_cobranzas_proces_user,Acceso a Procesos de Cobranzas - Usuario,model_cobranzas_proces,base.group_user,1,1,1,1
+access_aduana_proces_user,Acceso a Procesos de Aduana - Usuario,model_aduana_proces,base.group_user,1,1,1,1

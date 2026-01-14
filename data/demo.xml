@@ -11,10 +11,29 @@
             <field name="date_end">2026-12-31</field>
         </record>
 
+        <!-- Demo Data for Ciudades -->
+        <record id="ciudad_demo_sucre" model="ciudad.ciudad">
+            <field name="name">Sucre</field>
+            <field name="codigo">SUC</field>
+            <field name="description">Ciudad de Sucre</field>
+        </record>
+
+        <record id="ciudad_demo_lapaz" model="ciudad.ciudad">
+            <field name="name">La Paz</field>
+            <field name="codigo">LPZ</field>
+            <field name="description">Ciudad de La Paz</field>
+        </record>
+
+        <record id="ciudad_demo_cochabamba" model="ciudad.ciudad">
+            <field name="name">Cochabamba</field>
+            <field name="codigo">CBB</field>
+            <field name="description">Ciudad de Cochabamba</field>
+        </record>
+
         <!-- Demo Data for Gedesa Procesos -->
         <record id="gedesa_proces_demo_1" model="gedesa.proces">
             <field name="numero">1</field>
-            <field name="ciudad">Sucre</field>
+            <field name="ciudad_id" ref="ciudad_demo_sucre"/>
             <field name="tipo_proceso">civil</field>
             <field name="juzgado_nurej">Juzgado 5</field>
             <field name="demandante_o_denunciante">Juan Perez</field>

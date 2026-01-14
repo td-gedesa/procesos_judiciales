@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Ciudad List View -->
+        <record id="view_ciudad_list" model="ir.ui.view">
+            <field name="name">ciudad.ciudad.list</field>
+            <field name="model">ciudad.ciudad</field>
+            <field name="arch" type="xml">
+                <list string="Ciudades">
+                    <field name="name"/>
+                    <field name="codigo"/>
+                    <field name="active"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Ciudad Form View -->
+        <record id="view_ciudad_form" model="ir.ui.view">
+            <field name="name">ciudad.ciudad.form</field>
+            <field name="model">ciudad.ciudad</field>
+            <field name="arch" type="xml">
+                <form string="Ciudad">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="1"/>
+                                <field name="codigo"/>
+                            </group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                        <field name="description" widget="html"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Ciudad Search View -->
+        <record id="view_ciudad_search" model="ir.ui.view">
+            <field name="name">ciudad.ciudad.search</field>
+            <field name="model">ciudad.ciudad</field>
+            <field name="arch" type="xml">
+                <search string="Ciudades">
+                    <field name="name" string="Nombre de la Ciudad"/>
+                    <field name="codigo" string="Código"/>
+                    <separator/>
+                    <filter name="active" string="Activo" domain="[('active', '=', True)]"/>
+                    <filter name="inactive" string="Inactivo" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Ciudad Action -->
+        <record id="action_ciudad" model="ir.actions.act_window">
+            <field name="name">Ciudades</field>
+            <field name="res_model">ciudad.ciudad</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crea tu primera ciudad
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

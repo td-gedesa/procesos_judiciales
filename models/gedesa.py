@@ -10,7 +10,8 @@ class GedresaProces(models.Model):
         string='Nº',
         required=True
     )
-    ciudad = fields.Char(
+    ciudad_id = fields.Many2one(
+        'ciudad.ciudad',
         string='CIUDAD',
         required=True
     )

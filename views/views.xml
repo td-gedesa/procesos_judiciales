@@ -77,8 +77,57 @@
         <menuitem
             id="menu_procesos_judiciales_root"
             name="Procesos Judiciales"
-            action="action_procesos_judiciales"
             sequence="10"/>
+
+        <!-- Submenus by Category -->
+        <menuitem
+            id="menu_procesos_judiciales_gedesa"
+            name="Gedesa"
+            parent="menu_procesos_judiciales_root"
+            action="action_procesos_judiciales"
+            sequence="1"/>
+
+        <menuitem
+            id="menu_procesos_judiciales_saint_moritz"
+            name="Saint Moritz"
+            parent="menu_procesos_judiciales_root"
+            action="action_procesos_judiciales"
+            sequence="2"/>
+
+        <menuitem
+            id="menu_procesos_judiciales_qualitat"
+            name="Qualitat"
+            parent="menu_procesos_judiciales_root"
+            action="action_procesos_judiciales"
+            sequence="3"/>
+
+        <menuitem
+            id="menu_procesos_judiciales_elite_brands"
+            name="Elite Brands"
+            parent="menu_procesos_judiciales_root"
+            action="action_procesos_judiciales"
+            sequence="4"/>
+
+        <menuitem
+            id="menu_procesos_judiciales_otros"
+            name="Otros"
+            parent="menu_procesos_judiciales_root"
+            action="action_procesos_judiciales"
+            sequence="5"/>
+
+        <menuitem
+            id="menu_procesos_judiciales_cobranzas"
+            name="Cobranzas"
+            parent="menu_procesos_judiciales_root"
+            action="action_procesos_judiciales"
+            sequence="6"/>
+
+        <menuitem
+            id="menu_procesos_judiciales_aduana"
+            name="Aduana"
+            parent="menu_procesos_judiciales_root"
+            action="action_procesos_judiciales"
+            sequence="7"/>
 
     </data>
 </odoo>

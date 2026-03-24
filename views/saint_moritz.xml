@@ -9,15 +9,15 @@
             <field name="arch" type="xml">
                 <list string="Procesos Saint Moritz">
                     <field name="numero"/>
-                    <field name="ciudad_id"/>
-                    <field name="tipo_proceso_id"/>
-                    <field name="juzgado_nurej"/>
-                    <field name="demandante_o_denunciante"/>
-                    <field name="demandado_o_denunciado"/>
-                    <field name="fecha_inicio_proceso"/>
-                    <field name="monto_demandado"/>
-                    <field name="monto_cancelado"/>
-                    <field name="estado_proceso"/>
+                    <field name="ciudad_id" optional="show"/>
+                    <field name="tipo_proceso_id" optional="show"/>
+                    <field name="juzgado_nurej" optional="show"/>
+                    <field name="demandante_o_denunciante" optional="show"/>
+                    <field name="demandado_o_denunciado" optional="show"/>
+                    <field name="fecha_inicio_proceso" optional="show"/>
+                    <field name="monto_demandado" optional="hide"/>
+                    <field name="monto_cancelado" optional="hide"/>
+                    <field name="estado_proceso" optional="show"/>
                 </list>
             </field>
         </record>

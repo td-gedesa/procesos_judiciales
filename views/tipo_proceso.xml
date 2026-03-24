@@ -9,8 +9,8 @@
             <field name="arch" type="xml">
                 <list string="Tipos de Proceso">
                     <field name="name"/>
-                    <field name="codigo"/>
-                    <field name="active"/>
+                    <field name="codigo" optional="show"/>
+                    <field name="active" optional="show"/>
                 </list>
             </field>
         </record>

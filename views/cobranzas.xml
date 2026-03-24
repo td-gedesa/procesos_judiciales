@@ -9,13 +9,13 @@
             <field name="arch" type="xml">
                 <list string="Procesos de Cobranzas">
                     <field name="numero"/>
-                    <field name="ciudad_id"/>
-                    <field name="empresa"/>
-                    <field name="entidad"/>
-                    <field name="monto_adeudado"/>
-                    <field name="fecha_contrato"/>
-                    <field name="fecha_recepcion"/>
-                    <field name="estado_proceso"/>
+                    <field name="ciudad_id" optional="show"/>
+                    <field name="empresa" optional="show"/>
+                    <field name="entidad" optional="show"/>
+                    <field name="monto_adeudado" optional="show"/>
+                    <field name="fecha_contrato" optional="hide"/>
+                    <field name="fecha_recepcion" optional="hide"/>
+                    <field name="estado_proceso" optional="show"/>
                 </list>
             </field>
         </record>

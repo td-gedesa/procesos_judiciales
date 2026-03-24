@@ -9,14 +9,14 @@
             <field name="arch" type="xml">
                 <list string="Procesos Gedesa">
                     <field name="numero"/>
-                    <field name="ciudad_id"/>
-                    <field name="tipo_proceso_id"/>
-                    <field name="juzgado_nurej"/>
-                    <field name="demandante_o_denunciante"/>
-                    <field name="demandado_o_denunciado"/>
-                    <field name="monto"/>
-                    <field name="estado_proceso"/>
-                    <field name="proxima_actuacion_estrategia"/>
+                    <field name="ciudad_id" optional="show"/>
+                    <field name="tipo_proceso_id" optional="show"/>
+                    <field name="juzgado_nurej" optional="show"/>
+                    <field name="demandante_o_denunciante" optional="show"/>
+                    <field name="demandado_o_denunciado" optional="show"/>
+                    <field name="monto" optional="hide"/>
+                    <field name="estado_proceso" optional="show"/>
+                    <field name="proxima_actuacion_estrategia" optional="hide"/>
                 </list>
             </field>
         </record>

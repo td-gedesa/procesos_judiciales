@@ -12,8 +12,7 @@
                     <field name="ciudad_id" optional="show"/>
                     <field name="tipo_proceso_id" optional="show"/>
                     <field name="juzgado_nurej" optional="show"/>
-                    <field name="demandante_o_denunciante" optional="show"/>
-                    <field name="demandado_o_denunciado" optional="show"/>
+                    <field name="partes" optional="show"/>
                     <field name="monto" optional="hide"/>
                     <field name="estado_proceso" optional="show"/>
                     <field name="proxima_actuacion_estrategia" optional="hide"/>
@@ -45,12 +44,7 @@
                             </group>
                         </group>
                         <group string="Partes del Proceso">
-                            <group>
-                                <field name="demandante_o_denunciante"/>
-                            </group>
-                            <group>
-                                <field name="demandado_o_denunciado"/>
-                            </group>
+                            <field name="partes"/>
                         </group>
                         <notebook>
                             <page string="Resumen">
@@ -79,8 +73,7 @@
                 <search string="Procesos Gedesa">
                     <field name="numero" string="Nº"/>
                     <field name="ciudad_id" string="Ciudad"/>
-                    <field name="demandante_o_denunciante" string="Demandante o Denunciante"/>
-                    <field name="demandado_o_denunciado" string="Demandado o Denunciado"/>
+                    <field name="partes" string="Demandante / Demandado"/>
                     <field name="tipo_proceso_id"/>
                 </search>
             </field>

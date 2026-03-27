@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 
 class EliteBrandsProces(models.Model):
@@ -57,10 +57,14 @@ class EliteBrandsProces(models.Model):
     anotaciones = fields.Text(
         string='ANOTACIONES'
     )
+    partes = fields.Char(
+        string='Demandante / Demandado'
+    )
 
     def name_get(self):
         result = []
         for record in self:
-            name = f"[{record.numero}] {record.demandante_o_denunciante or 'N/A'}"
+            name = record.partes or 'N/A'
+            name = f"[{record.numero}] {name}"
             result.append((record.id, name))
         return result

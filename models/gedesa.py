@@ -51,6 +51,9 @@ class GedresaProces(models.Model):
     anotaciones = fields.Text(
         string='ANOTACIONES'
     )
+    partes = fields.Char(
+        string='Demandante / Demandado'
+    )
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -61,6 +64,14 @@ class GedresaProces(models.Model):
 
     def write(self, vals):
         return super().write(vals)
+
+    def name_get(self):
+        result = []
+        for record in self:
+            name = record.partes or 'N/A'
+            name = f"[{record.numero}] {name}"
+            result.append((record.id, name))
+        return result
 
     def unlink(self):
         return super().unlink()

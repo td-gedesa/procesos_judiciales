@@ -26,13 +26,8 @@ class OtrosProces(models.Model):
     fecha_inicio_proceso = fields.Date(
         string='FECHA INICIO PROCESO'
     )
-    monto = fields.Monetary(
-        string='MONTO',
-        currency_field='company_currency_id'
-    )
-    company_currency_id = fields.Many2one(
-        'res.currency',
-        default=lambda self: self.env.company.currency_id
+    monto = fields.Char(
+        string='MONTO'
     )
     breve_resumen = fields.Text(
         string='BREVE RESUMEN'

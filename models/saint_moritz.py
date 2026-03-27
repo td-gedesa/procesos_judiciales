@@ -24,12 +24,6 @@ class SaintMoritzProces(models.Model):
         string='JUZGADO/NUREJ',
         required=True
     )
-    demandante_o_denunciante = fields.Char(
-        string='DEMANDANTE'
-    )
-    demandado_o_denunciado = fields.Char(
-        string='DEMANDADO'
-    )
     fecha_inicio_proceso = fields.Date(
         string='FECHA INICIO PROCESO'
     )

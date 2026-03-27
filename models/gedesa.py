@@ -25,12 +25,6 @@ class GedresaProces(models.Model):
         string='JUZGADO/NUREJ',
         required=True
     )
-    demandante_o_denunciante = fields.Char(
-        string='DEMANDANTE O DENUNCIANTE'
-    )
-    demandado_o_denunciado = fields.Char(
-        string='DEMANDADO O DENUNCIADO'
-    )
     monto = fields.Char(
         string='MONTO DEMANDADO O DENUNCIADO'
     )

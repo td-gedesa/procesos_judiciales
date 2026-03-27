@@ -83,8 +83,7 @@
             <field name="ciudad_id" ref="ciudad_demo_sucre"/>
             <field name="tipo_proceso_id" ref="tipo_proceso_demo_civil"/>
             <field name="juzgado_nurej">Juzgado 5</field>
-            <field name="demandante_o_denunciante">Juan Perez</field>
-            <field name="demandado_o_denunciado">ABC Ltda</field>
+            <field name="partes">Juan Perez / ABC Ltda</field>
             <field name="monto">50000</field>
             <field name="breve_resumen">Demanda por contrato incumplido entre las partes</field>
             <field name="estado_proceso">13/11/24: Notificado Auto Supremo</field>

@@ -1,6 +1,6 @@
 {
     'name': 'Procesos Judiciales',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.0.1',
     'category': 'Tools',
     'description': 'Módulo para la gestión de procesos judiciales',
     'author': 'Alan Odoo',

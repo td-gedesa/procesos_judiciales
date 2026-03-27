@@ -10,13 +10,11 @@ class OtrosProces(models.Model):
         string='Nº',
         required=True
     )
-    ciudad_id = fields.Many2one(
-        'ciudad.ciudad',
+    ciudad_id = fields.Char(
         string='CIUDAD',
         required=True
     )
-    tipo_proceso_id = fields.Many2one(
-        'tipo.proceso',
+    tipo_proceso_id = fields.Char(
         string='TIPO',
         required=True
     )

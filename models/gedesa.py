@@ -11,13 +11,11 @@ class GedresaProces(models.Model):
         readonly=True,
         copy=False
     )
-    ciudad_id = fields.Many2one(
-        'ciudad.ciudad',
+    ciudad_id = fields.Char(
         string='CIUDAD',
         required=True
     )
-    tipo_proceso_id = fields.Many2one(
-        'tipo.proceso',
+    tipo_proceso_id = fields.Char(
         string='TIPO DE PROCESO',
         required=True
     )

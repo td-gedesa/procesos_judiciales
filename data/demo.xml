@@ -80,8 +80,8 @@
         </record>
         <record id="gedesa_proces_demo_1" model="gedesa.proces">
             <field name="numero">1</field>
-            <field name="ciudad_id" ref="ciudad_demo_sucre"/>
-            <field name="tipo_proceso_id" ref="tipo_proceso_demo_civil"/>
+            <field name="ciudad_id">Sucre</field>
+            <field name="tipo_proceso_id">CIVIL</field>
             <field name="juzgado_nurej">Juzgado 5</field>
             <field name="partes">Juan Perez / ABC Ltda</field>
             <field name="monto">50000</field>

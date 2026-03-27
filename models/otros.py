@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 
 class OtrosProces(models.Model):
@@ -8,7 +8,8 @@ class OtrosProces(models.Model):
 
     numero = fields.Integer(
         string='Nº',
-        required=True
+        readonly=True,
+        copy=False
     )
     ciudad_id = fields.Char(
         string='CIUDAD',
@@ -39,6 +40,13 @@ class OtrosProces(models.Model):
     anotaciones = fields.Text(
         string='ANOTACIONES'
     )
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if not vals.get('numero'):
+                vals['numero'] = self.env['ir.sequence'].next_by_code('otros.proces.sequence') or 0
+        return super().create(vals_list)
 
     def name_get(self):
         result = []

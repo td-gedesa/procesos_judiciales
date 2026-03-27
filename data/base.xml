@@ -12,6 +12,66 @@
             <field name="number_increment">1</field>
         </record>
 
+        <!-- Sequence for Saint Moritz Proces Numbers -->
+        <record id="sequence_saint_moritz_proces" model="ir.sequence">
+            <field name="name">Saint Moritz Proces Sequence</field>
+            <field name="code">saint.moritz.proces.sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <!-- Sequence for Qualitat Proces Numbers -->
+        <record id="sequence_qualitat_proces" model="ir.sequence">
+            <field name="name">Qualitat Proces Sequence</field>
+            <field name="code">qualitat.proces.sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <!-- Sequence for Elite Brands Proces Numbers -->
+        <record id="sequence_elite_brands_proces" model="ir.sequence">
+            <field name="name">Elite Brands Proces Sequence</field>
+            <field name="code">elite.brands.proces.sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <!-- Sequence for Otros Proces Numbers -->
+        <record id="sequence_otros_proces" model="ir.sequence">
+            <field name="name">Otros Proces Sequence</field>
+            <field name="code">otros.proces.sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <!-- Sequence for Cobranzas Proces Numbers -->
+        <record id="sequence_cobranzas_proces" model="ir.sequence">
+            <field name="name">Cobranzas Proces Sequence</field>
+            <field name="code">cobranzas.proces.sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <!-- Sequence for Aduana Proces Numbers -->
+        <record id="sequence_aduana_proces" model="ir.sequence">
+            <field name="name">Aduana Proces Sequence</field>
+            <field name="code">aduana.proces.sequence</field>
+            <field name="prefix"></field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
         <!-- Base Data for Tipos de Proceso (loaded on every update) -->
         <record id="tipo_proceso_civil" model="tipo.proceso">
             <field name="name">CIVIL</field>

@@ -8,7 +8,8 @@ class QualitatProces(models.Model):
 
     numero = fields.Integer(
         string='Nº',
-        required=True
+        readonly=True,
+        copy=False
     )
     ciudad_id = fields.Char(
         string='CIUDAD',
@@ -52,6 +53,13 @@ class QualitatProces(models.Model):
     partes = fields.Char(
         string='Demandante / Demandado'
     )
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if not vals.get('numero'):
+                vals['numero'] = self.env['ir.sequence'].next_by_code('qualitat.proces.sequence') or 0
+        return super().create(vals_list)
 
     def name_get(self):
         result = []

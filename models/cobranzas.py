@@ -25,13 +25,8 @@ class CobranzasProces(models.Model):
     entidad = fields.Char(
         string='ENTIDAD'
     )
-    monto_adeudado = fields.Monetary(
-        string='MONTO ADEUDADO',
-        currency_field='company_currency_id'
-    )
-    company_currency_id = fields.Many2one(
-        'res.currency',
-        default=lambda self: self.env.company.currency_id
+    monto_adeudado = fields.Char(
+        string='MONTO ADEUDADO'
     )
     fecha_contrato = fields.Date(
         string='FECHA CONTRATO'

@@ -38,7 +38,6 @@
                                 <field name="tipo_proceso_id" required="1"/>
                                 <field name="fecha_inicio_proceso"/>
                                 <field name="monto"/>
-                                <field name="company_currency_id" invisible="1"/>
                             </group>
                         </group>
                         <group string="Partes Involucradas">

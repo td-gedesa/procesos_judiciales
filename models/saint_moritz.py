@@ -33,20 +33,14 @@ class SaintMoritzProces(models.Model):
     fecha_inicio_proceso = fields.Date(
         string='FECHA INICIO PROCESO'
     )
-    monto_demandado = fields.Monetary(
-        string='MONTO DEMANDADO',
-        currency_field='company_currency_id'
-    )
-    company_currency_id = fields.Many2one(
-        'res.currency',
-        default=lambda self: self.env.company.currency_id
+    monto_demandado = fields.Char(
+        string='MONTO DEMANDADO'
     )
     causa_demandada = fields.Text(
         string='CAUSA DEMANDADA'
     )
-    monto_cancelado = fields.Monetary(
-        string='MONTO CANCELADO',
-        currency_field='company_currency_id'
+    monto_cancelado = fields.Char(
+        string='MONTO CANCELADO'
     )
     estado_proceso = fields.Text(
         string='ESTADO DEL PROCESO'

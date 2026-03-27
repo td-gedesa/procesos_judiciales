@@ -31,13 +31,8 @@ class GedresaProces(models.Model):
     demandado_o_denunciado = fields.Char(
         string='DEMANDADO O DENUNCIADO'
     )
-    monto = fields.Monetary(
-        string='MONTO DEMANDADO O DENUNCIADO',
-        currency_field='company_currency_id'
-    )
-    company_currency_id = fields.Many2one(
-        'res.currency',
-        default=lambda self: self.env.company.currency_id
+    monto = fields.Char(
+        string='MONTO DEMANDADO O DENUNCIADO'
     )
     breve_resumen = fields.Text(
         string='BREVE RESUMEN DEL CASO'
